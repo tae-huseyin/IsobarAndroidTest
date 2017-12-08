@@ -20,7 +20,7 @@ but leave time for attempting the other parts of this test as well.
         android:id="@+id/textView2"
         android:autoText="false"
         android:layout_below="@+id/textView3"
-        android:layout_alignLeft="@+id/switch1"/>
+        android:layout_alignLeft="@+id/switchSync"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -33,12 +33,38 @@ but leave time for attempting the other parts of this test as well.
         android:layout_alignParentLeft="true"/>
 
     <Switch
-        android:id="@+id/switch1"
+        android:id="@+id/switchSync"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/textView2"
         android:layout_marginTop="29dp"
         android:text="@string/seek_btn_text" />
+
+    <SeekBar
+        android:id="@+id/seekBar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/switchSync"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/tvDifference"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seekBar1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:textSize="20sp"
+        android:text="0" />
+
+    <SeekBar
+        android:id="@+id/seekBar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvDifference"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
 
 </RelativeLayout>
